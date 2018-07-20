@@ -1,0 +1,14 @@
+{
+  "name": "car-survey-app",
+  "version": "1.0.0",
+  "description": "server for car-survey",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kenworthe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
