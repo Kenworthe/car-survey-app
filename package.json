@@ -1,14 +1,18 @@
 {
   "name": "car-survey-app",
   "version": "1.0.0",
-  "description": "server for car-survey",
-  "main": "index.js",
+  "description": "app server for car-survey",
+  "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "author": "Kenworthe",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "request": "^2.87.0"
   }
 }
