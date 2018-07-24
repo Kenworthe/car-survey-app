@@ -4,9 +4,11 @@ var request = require('request');
 
 // These are url's of Flask app's localhost/docker environment
 // TODO: Replace these with actual flask url. better yet, env variable in Docker.
-const API_BASE_URL = 'http://0.0.0.0:5000';
-var questionsUrl = API_BASE_URL + '/questions';
-var carsUrl = API_BASE_URL + '/cars';
+// const API_BASE_URL = 'http://0.0.0.0';
+const API_BASE_URL = 'http://172.17.0.2';
+const PORT = '5000';
+var questionsUrl = API_BASE_URL + ':' + PORT + '/questions';
+var carsUrl = API_BASE_URL + ':' + PORT + '/cars';
 
 // GET home page -> serves index.html
 router.get('/', function(req, res, next) {
